@@ -1,0 +1,175 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qst1" />
+
+        <EditText
+            android:id="@+id/bboy"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/qst1Hint"
+             />
+
+        <View style="@style/divider" />
+
+        <TextView
+            style="@style/questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qst2" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/brlin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/berlinRadio" />
+
+            <RadioButton
+                android:id="@+id/brnx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bronxRadio" />
+
+            <RadioButton
+                android:id="@+id/lyon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lyonRadio" />
+
+        </RadioGroup>
+
+        <View style="@style/divider" />
+
+        <TextView
+            style="@style/questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/qst3"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/lilou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lilouCheck" />
+
+            <CheckBox
+                android:id="@+id/hong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hongCheck" />
+
+            <CheckBox
+                android:id="@+id/wing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wingCheck" />
+
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/questions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qst4" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/bboy" />
+
+            <EditText
+                android:id="@+id/move"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/qst4Hint" />
+
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/questions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qst5" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/dance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/danceRadio" />
+
+                <RadioButton
+                    android:id="@+id/sport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SportRadio" />
+
+                <RadioButton
+                    android:id="@+id/both"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bothRadio" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spaceHeight" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/btnMargin"
+            android:background="@android:color/background_light"
+            android:text="@string/submitBtn" />
+
+    </LinearLayout>
+</ScrollView>

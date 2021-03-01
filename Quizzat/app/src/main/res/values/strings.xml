@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Quizzat</string>
+    <string name="qst1">What does the word Bboy stand for?</string>
+    <string name="qst1Hint">Bboy is?</string>
+    <string name="qst2">What is the birthplace of Bboying?</string>
+    <string name="qst3">Who are the 2 bboys to ever win Redbull BC one twice?</string>
+    <string name="qst4">What is the name of this move?</string>
+    <string name="qst4Hint">the Move?</string>
+    <string name="qst5">is bboy a dance or sport?</string>
+    <string name="berlinRadio"> Berlin </string>
+    <string name="bronxRadio"> The Bronx</string>
+    <string name="lyonRadio"> Lyon</string>
+    <string name="lilouCheck"> Lilou</string>
+    <string name="hongCheck"> Hong 10 </string>
+    <string name="wingCheck"> Wing </string>
+    <string name="danceRadio"> Dance </string>
+    <string name="SportRadio"> Sport</string>
+    <string name="bothRadio"> Dance &amp; Sport </string>
+    <string name="submitBtn"> Submit </string>
+</resources>
