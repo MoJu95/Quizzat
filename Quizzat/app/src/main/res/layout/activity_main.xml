@@ -17,7 +17,7 @@
             android:text="@string/qst1" />
 
         <EditText
-            android:id="@+id/bboy"
+            android:id="@+id/bboy_edit_text"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:hint="@string/qst1Hint"
@@ -37,19 +37,19 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/brlin"
+                android:id="@+id/brlin_radio_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/berlinRadio" />
 
             <RadioButton
-                android:id="@+id/brnx"
+                android:id="@+id/bronx_radio_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/bronxRadio" />
 
             <RadioButton
-                android:id="@+id/lyon"
+                android:id="@+id/lyon_radio_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/lyonRadio" />
@@ -71,19 +71,19 @@
             android:layout_height="wrap_content">
 
             <CheckBox
-                android:id="@+id/lilou"
+                android:id="@+id/lilou_checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/lilouCheck" />
 
             <CheckBox
-                android:id="@+id/hong"
+                android:id="@+id/hong_checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/hongCheck" />
 
             <CheckBox
-                android:id="@+id/wing"
+                android:id="@+id/wing_checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/wingCheck" />
@@ -112,7 +112,7 @@
                 android:src="@mipmap/bboy" />
 
             <EditText
-                android:id="@+id/move"
+                android:id="@+id/move_edit_text"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/qst4Hint" />
@@ -138,19 +138,19 @@
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/dance"
+                    android:id="@+id/dance_radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/danceRadio" />
 
                 <RadioButton
-                    android:id="@+id/sport"
+                    android:id="@+id/sport_radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/SportRadio" />
 
                 <RadioButton
-                    android:id="@+id/both"
+                    android:id="@+id/dance_and_sport_radio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/bothRadio" />
@@ -159,12 +159,8 @@
 
         </LinearLayout>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/spaceHeight" />
-
         <Button
-            android:id="@+id/submit"
+            android:id="@+id/submit_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/btnMargin"
