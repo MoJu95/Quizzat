@@ -10,36 +10,41 @@ import com.moju.quizzat.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
     //Activity Main Object containing all the id's of the Views
-private ActivityMainBinding binding;
+    private ActivityMainBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
-        binding.submit.setOnClickListener(new View.OnClickListener() {
+        binding.submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int score = 0;
-                if (binding.bboy.getText().toString().equals("Breakdance boy")) {
+                if (binding.bboyEditText.getText().toString().equalsIgnoreCase("Breakdance boy")) {
                     score++;
                 }
-                if (binding.brnx.isChecked()) {
+                if (binding.bronxRadioButton.isChecked()) {
                     score++;
                 }
-                if (binding.lilou.isChecked() && binding.hong.isChecked()) {
+                if (binding.lilouCheckbox.isChecked() && binding.hongCheckbox.isChecked() && !binding.wingCheckbox.isChecked()) {
                     score++;
                 }
-                if (binding.move.getText().toString().equals("Elbow Freeze")) {
+                if (binding.moveEditText.getText().toString().equalsIgnoreCase("Elbow Freeze")) {
                     score++;
                 }
-                if (binding.both.isChecked()) {
+                if (binding.danceAndSportRadio.isChecked()) {
                     score++;
                 }
-
-                Toast.makeText(getApplicationContext(), "you scored " + score + "/5", Toast.LENGTH_SHORT).show();
+                if (score > 0){
+                    Toast.makeText(getApplicationContext(), "you scored " + score + "/5", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    Toast.makeText(getApplicationContext(), R.string.no_right_answers, Toast.LENGTH_SHORT).show();
+                }
             }
-        });
+            });
 
+        }
     }
-}
